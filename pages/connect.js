@@ -17,7 +17,7 @@
 // const ethereumClient = new EthereumClient(wagmiConfig, chains)
 
 function connect() {
-    const { open, close } = useWeb3Modal()
+    // const { open, close } = useWeb3Modal()
   return (
     <>
       {/* <WagmiConfig config={wagmiConfig}> */}

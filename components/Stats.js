@@ -11,7 +11,7 @@ function Stats() {
                 <div className="stat-title">Total Airdoge Burned</div>
                 <div className="stat-value">$89,400</div>
                 <div className="stat-actions">
-                    <a target="_blank" href="https://arbiscan.io/token/0x09E18590E8f76b6Cf471b3cd75fE1A1a9D2B2c2b?a=0x000000000000000000000000000000000000dEaD" className="btn btn-sm btn-success">burn address: 0x000000000000000000000000000000000000dEaD</a>
+                    <a target="_blank" rel="noreferrer" href="https://arbiscan.io/token/0x09E18590E8f76b6Cf471b3cd75fE1A1a9D2B2c2b?a=0x000000000000000000000000000000000000dEaD" className="btn btn-sm btn-success">burn address: 0x000000000000000000000000000000000000dEaD</a>
                 </div>
                 </div>
                 <div className="stat">
