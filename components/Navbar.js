@@ -1,24 +1,96 @@
-import React from 'react'
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { useAccount } from 'wagmi'
 
-const Navbar = () => {
+
+
+const Navbar = ({open,close}) => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { address, isConnecting, isDisconnected } = useAccount()
+
+  const handleToggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const handleConnectWallet = () => {
+    // Implement your logic to connect the crypto wallet here
+    // This function will be called when the "Connect Wallet" button is clicked
+    open()
+  };
+
+  useEffect(()=>{
+    if(address){
+      console.log("address: ",address)
+    }
+  },[address])
+
   return (
-    <div className=''>
-        <div className="flex flex-col lg:flex-row justify-center  lg:justify-between items-center gap-5">
-            <img src="/assets/logo.svg" alt="logo" />
-            <div className="flex flex-col lg:flex-row justify-center  lg:justify-between items-center gap-5">
-                <p>Courses</p>
-                <p>About Us</p>
-                <p>Teacher</p>
-                <p>Pricing</p>
-                <p>Careers</p>
-                <p>Blog</p>
-            </div>
-            <button className='btn bg-white text-[#7270dd] border-none hover:bg-[#7270dd] hover:text-white capitalize rounded-full'>
-                Get Started
-            </button>
-        </div>
-    </div>
-  )
-}
+    <div>
+      <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
+        <img src="/assets/Untitled-1-02.jpeg" height={100} width={100} alt="logo" className="rounded-full" />
 
-export default Navbar
+        <div className="flex items-center lg:hidden">
+          <button
+            className="btn text-primary bg-primary-content rounded-full bg-accent"
+            onClick={handleToggleMobileMenu}
+          >
+            Menu
+          </button>
+        </div>
+
+        <div
+          className={`lg:flex flex-col lg:flex-row justify-between items-center gap-16 ${
+            isMobileMenuOpen ? "flex" : "hidden"
+          }`}
+        >
+          <Link href="/">
+            <span className="text-primary cursor-pointer">Home</span>
+          </Link>
+          <Link href="/lp">
+            <span className="text-primary cursor-pointer">LP</span>
+          </Link>
+          <Link href="/earn">
+            <span className="text-primary cursor-pointer">Earn</span>
+          </Link>
+          <Link href="/luckyDrop">
+            <span className="text-primary cursor-pointer">Lucky Drop</span>
+          </Link>
+          <Link href="/aicode">
+            <span className="text-primary cursor-pointer">AICode</span>
+          </Link>
+          <Link href="/nft">
+            <span className="text-primary cursor-pointer">NFT</span>
+          </Link>
+        </div>
+
+        {/* <div className="hidden lg:block"> */}
+        <div className="block mb-5">
+          {
+            address ? 
+            (
+              <button
+                className="btn text-primary bg-primary-content rounded-full bg-accent"
+                onClick={handleConnectWallet}
+              >
+                {address}
+              </button>
+            )
+            :
+           (
+              <button
+            className="btn text-primary bg-primary-content rounded-full bg-accent"
+            onClick={handleConnectWallet}
+          >
+            Connect Wallet
+          </button>
+          
+            )
+
+          }
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;

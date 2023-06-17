@@ -4,28 +4,28 @@ import { BsFillPlusCircleFill } from 'react-icons/bs'
 const MoreInfoModal = () => {
   const info=[
     {
-      title:'How the first lesson with teacher will be?',
-      des:'By the end of the trial lesson, you will be able to determine for yourself whether this kind of online lesson is right for you or not. In our experience, most students appreciate the benefits of online education and decide to study online.'
+      title:'What is the purpose of the Airdoge token?',
+      des:'Airdoge aims to create a decentralized ecosystem that empowers its community with innovative financial solutions.'
     },
     {
-      title:'How the first lesson with teacher will be?',
-      des:'By the end of the trial lesson, you will be able to determine for yourself whether this kind of online lesson is right for you or not. In our experience, most students appreciate the benefits of online education and decide to study online.'
+      title:'How can I participate in the Airdoge community?',
+      des:'You can actively engage in community discussions, participate in governance, and contribute to the growth of the ecosystem.'
     },
     {
-      title:'How the first lesson with teacher will be?',
-      des:'By the end of the trial lesson, you will be able to determine for yourself whether this kind of online lesson is right for you or not. In our experience, most students appreciate the benefits of online education and decide to study online.'
+      title:'How does Airdoge leverage AI creatures in its development?',
+      des:'AI creatures play a vital role in the development of Airdoge by providing advanced algorithms and insights for enhanced functionality.'
     },
     {
-      title:'How the first lesson with teacher will be?',
-      des:'By the end of the trial lesson, you will be able to determine for yourself whether this kind of online lesson is right for you or not. In our experience, most students appreciate the benefits of online education and decide to study online.'
+      title:' What benefits do Airdoge token holders enjoy?',
+      des:'Airdoge token holders can access exclusive features, participate in token staking and yield farming, and enjoy potential rewards.'
     },
     {
-      title:'How the first lesson with teacher will be?',
-      des:'By the end of the trial lesson, you will be able to determine for yourself whether this kind of online lesson is right for you or not. In our experience, most students appreciate the benefits of online education and decide to study online.'
+      title:'Is Airdoge compatible with popular DeFi platforms?',
+      des:'Yes, Airdoge is designed to seamlessly integrate with popular DeFi platforms, providing users with a wider range of opportunities.'
     },
     {
-      title:'How the first lesson with teacher will be?',
-      des:'By the end of the trial lesson, you will be able to determine for yourself whether this kind of online lesson is right for you or not. In our experience, most students appreciate the benefits of online education and decide to study online.'
+      title:' Can I contribute to the development of Airdoge?',
+      des:'Absolutely! Airdoge encourages community involvement and welcomes contributions in shaping its future through feedback and ideas.'
     },
   ]
   return (
@@ -43,7 +43,7 @@ const MoreInfoModal = () => {
     <Disclosure key={i} >
         {({ open }) => (
           <div className='group'>
-            <Disclosure.Button className="flex flex-col group-hover:bg-[#524fd5] group-focus:bg-[#524fd5] w-full justify-between rounded-lg lg:rounded-full border border-gray-200 px-8 py-10 text-left text-sm font-medium  focus:outline-none ">
+            <Disclosure.Button className="flex flex-col group-hover:bg-accent-content group-focus:bg-accent-content w-full justify-between rounded-lg lg:rounded-full border border-gray-200 px-8 py-10 text-left text-sm font-medium  focus:outline-none ">
               <div className="flex justify-between items-center w-full">
               <span className='group-hover:text-white  group-focus:text-white'>{inf.title}</span>
               <BsFillPlusCircleFill

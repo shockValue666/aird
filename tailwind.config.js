@@ -10,15 +10,15 @@ module.exports = {
       padding: {
         DEFAULT: "1rem",
         sm: "2rem",
-        lg: "6rem",
-        xl: "7rem",
-        "2xl": "4rem",
+        lg: "4rem",
+        xl: "5rem",
+        "2xl": "3rem",
       },
     },
     fontFamily: {
-      monoton:["Monoton", "cursive"],
-      satoshi:['Satoshi', 'sans-serif'],
-      clash:['Clash Display', 'sans-serif'],
+      monoton: ["Monoton", "cursive"],
+      satoshi: ['Satoshi', 'sans-serif'],
+      clash: ['Clash Display', 'sans-serif'],
       infinite: ["Outfit", "sans-serif"],
       bebasneo: ['Bebas Neue', 'cursive'],
     },
@@ -32,39 +32,48 @@ module.exports = {
         "card-shadow": "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
         "dark-shadow": "10px 10px 5px 0px rgba(130,130,130,0.75)"
       },
-
       colors: {
-        bg: {
-          DEFAULT: "#ff5555",
-          200: "#272727",
-          300: "#2e2e2e",
-        },
-        primary: {
-          DEFAULT: "#ff5555",
-          50: "#F7C6C6",
-          100: "#F5B4B4",
-          200: "#F09090",
-          300: "#EC6C6C",
-          400: "#E74848",
-          500: "#DA1E37",
-          600: "#B61818",
-          700: "#841212",
-          800: "#530B0B",
-          900: "#210404",
-        },
+        gradientLight: '#0077b6',  // Light blue
+        gradientDark: '#023e8a',  // Dark blue
+        // bg: {
+        //   DEFAULT: "#0a0a0a",
+        //   200: "#1b1b1b",
+        //   300: "#2b2b2b",
+        // },
+        // primary: {
+        //   DEFAULT: "rgb(0, 36, 6)",
+        //   50: "rgba(0, 36, 6, 0.1)",
+        //   100: "rgba(0, 36, 6, 0.2)",
+        //   200: "rgba(0, 36, 6, 0.3)",
+        //   300: "rgba(0, 36, 6, 0.4)",
+        //   400: "rgba(0, 36, 6, 0.5)",
+        //   500: "rgba(0, 36, 6, 0.6)",
+        //   600: "rgba(0, 36, 6, 0.7)",
+        //   700: "rgba(0, 36, 6, 0.8)",
+        //   800: "rgba(0, 36, 6, 0.9)",
+        //   900: "rgba(0, 36, 6, 1)",
+        // },
       },
+      backgroundImage: theme => ({
+        'gradient-radial': 'radial-gradient(ellipse at center, var(--tw-gradient-stops))',
+        'gradient-radial-at-t': 'radial-gradient(ellipse at top, var(--tw-gradient-stops))',
+        'gradient-radial-at-b': 'radial-gradient(ellipse at bottom, var(--tw-gradient-stops))',
+        'gradient-radial-at-l': 'radial-gradient(ellipse at left, var(--tw-gradient-stops))',
+        'gradient-radial-at-r': 'radial-gradient(ellipse at right, var(--tw-gradient-stops))',
+      }),
     },
   },
   daisyui: {
     themes: [
-      {
-        light: {
-          ...require("daisyui/src/colors/themes")["[data-theme=light]"],
-          primary: "#ff5555",
-          "primary-focus": "#E74848",
-        },
-      },
+      // {
+      //   dark: {
+      //     ...require("daisyui/src/colors/themes")["[data-theme=dark]"],
+      //     primary: "#14ffc8",
+      //     "primary-focus": "#9effc4",
+      //   },
+      // },
+      "dracula"
     ],
   },
-  plugins: [ require("daisyui"),require('@tailwindcss/line-clamp')],
+  plugins: [require("daisyui"), require('@tailwindcss/line-clamp')],
 };
