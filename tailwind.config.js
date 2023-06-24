@@ -40,8 +40,8 @@ module.exports = {
         //   200: "#1b1b1b",
         //   300: "#2b2b2b",
         // },
-        // primary: {
-        //   DEFAULT: "rgb(0, 36, 6)",
+        primary: {
+          DEFAULT: "#BF6F16",
         //   50: "rgba(0, 36, 6, 0.1)",
         //   100: "rgba(0, 36, 6, 0.2)",
         //   200: "rgba(0, 36, 6, 0.3)",
@@ -52,7 +52,7 @@ module.exports = {
         //   700: "rgba(0, 36, 6, 0.8)",
         //   800: "rgba(0, 36, 6, 0.9)",
         //   900: "rgba(0, 36, 6, 1)",
-        // },
+        },
       },
       backgroundImage: theme => ({
         'gradient-radial': 'radial-gradient(ellipse at center, var(--tw-gradient-stops))',

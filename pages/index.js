@@ -13,6 +13,7 @@ import Card from '../components/Card'
 import Information from '../components/Information'
 import Circle from '../components/Circle'
 import Stats from '../components/Stats'
+import SingleBanner from '../components/SingleBanner'
 
 import { EthereumClient, w3mConnectors, w3mProvider } from '@web3modal/ethereum'
 import { Web3Modal,useWeb3Modal } from '@web3modal/react'
@@ -50,6 +51,7 @@ export default function Home() {
           
           <Hero open={open} close={close}/>
           <Card/>
+          <SingleBanner/>
           <Information/>
           <Circle/>
           <Stats/>

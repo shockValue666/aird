@@ -27,7 +27,7 @@ const Navbar = ({open,close}) => {
   return (
     <div>
       <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
-        <img src="/assets/Untitled-1-02.jpeg" height={100} width={100} alt="logo" className="rounded-full" />
+        <img src="/assets/1Y_zf_5Z.jpg_large" height={100} width={100} alt="logo" className="rounded-full" />
 
         <div className="flex items-center lg:hidden">
           <button

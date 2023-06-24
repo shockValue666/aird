@@ -16,7 +16,7 @@ const Hero = ({open,close}) => {
           </p>
           <button className="btn btn-sm lg:btn-lg bg-primary text-white hover:bg-primary-500 hover:text-bg-300 rounded-full w-36 lg:w-44 capitalize">Get Started</button>
         </div>
-        <img src="/assets/5.png" alt="" className="mt-10" />
+        <img src="/assets/s3_fml7J.jpg_large" height={500} width={500} alt="" className="mt-10" />
       </div>
     </section>
   );

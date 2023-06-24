@@ -6,7 +6,7 @@ const CardComponent = () => {
       <div className="w-2/3 lg:w-1/2 xl:w-1/2">
         <div className="card bg-base-100 shadow-xl">
           <div className="card-body  space-y-8">
-            <h2 className="card-title text-[40px] font-bold text-secondary flex justify-center">
+            <h2 className="card-title text-[40px] font-bold text-primary flex justify-center">
               Airdrop soon!
             </h2>
             <p className="text-gray-500">A total of 210,000,000,000,000,000 AIDOGE tokens are now available to be claimed by those who have claimed the ARB airdrop.
@@ -33,16 +33,17 @@ const CardComponent = () => {
             <progress className="progress progress-primary w-56" value={40} max="100"></progress>
             <progress className="progress progress-primary w-56" value={70} max="100"></progress>
             <progress className="progress progress-primary w-56" value={100} max="100"></progress> */}
-            <progress className="progress progress-primary w-full" value={70} max="100"></progress>
+            <progress className="progress progress-accent w-full " value={70} max="100"></progress>
+            {/* <progress className="progress" value={70} max="100" style={{ backgroundColor: '#BF6F16' }}></progress> */}
             <div className="flex justify-center">
               <input
                 type="text"
-                placeholder="Type here"
-                className="input input-bordered input-primary w-full max-w-xs mt-4"
+                placeholder="0"
+                className="input input-bordered input-accent w-full max-w-l mt-4"
               />
             </div>
             <div className="flex justify-center">
-              <button className="btn btn-wide btn-outline btn-secondary mt-4">Secondary</button>
+              <button className="btn btn-wide btn-outline btn-accent mt-4">claim</button>
             </div>
           </div>
         </div>

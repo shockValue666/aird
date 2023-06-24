@@ -4,28 +4,28 @@ import { BsFillPlusCircleFill } from 'react-icons/bs'
 const MoreInfoModal = () => {
   const info=[
     {
-      title:'What is the purpose of the Airdoge token?',
-      des:'Airdoge aims to create a decentralized ecosystem that empowers its community with innovative financial solutions.'
+      title:'What is the purpose of the $Bark token?',
+      des:'$Bark aims to create a decentralized ecosystem that empowers its community with innovative financial solutions.'
     },
     {
-      title:'How can I participate in the Airdoge community?',
+      title:'How can I participate in the $Bark community?',
       des:'You can actively engage in community discussions, participate in governance, and contribute to the growth of the ecosystem.'
     },
     {
-      title:'How does Airdoge leverage AI creatures in its development?',
-      des:'AI creatures play a vital role in the development of Airdoge by providing advanced algorithms and insights for enhanced functionality.'
+      title:'How does $Bark leverage AI creatures in its development?',
+      des:'AI creatures play a vital role in the development of $Bark by providing advanced algorithms and insights for enhanced functionality.'
     },
     {
-      title:' What benefits do Airdoge token holders enjoy?',
-      des:'Airdoge token holders can access exclusive features, participate in token staking and yield farming, and enjoy potential rewards.'
+      title:' What benefits do $Bark token holders enjoy?',
+      des:'$Bark token holders can access exclusive features, participate in token staking and yield farming, and enjoy potential rewards.'
     },
     {
-      title:'Is Airdoge compatible with popular DeFi platforms?',
-      des:'Yes, Airdoge is designed to seamlessly integrate with popular DeFi platforms, providing users with a wider range of opportunities.'
+      title:'Is $Bark compatible with popular DeFi platforms?',
+      des:'Yes, $Bark is designed to seamlessly integrate with popular DeFi platforms, providing users with a wider range of opportunities.'
     },
     {
-      title:' Can I contribute to the development of Airdoge?',
-      des:'Absolutely! Airdoge encourages community involvement and welcomes contributions in shaping its future through feedback and ideas.'
+      title:' Can I contribute to the development of $Bark?',
+      des:'Absolutely! $Bark encourages community involvement and welcomes contributions in shaping its future through feedback and ideas.'
     },
   ]
   return (

@@ -5,7 +5,7 @@ const Information = () => {
     <div className="hero min-h-1/2 bg-base-200">
       <div className="hero-content flex-col lg:flex-row justify-center items-center gap-6">
         <img
-          src="/assets/4.png"
+          src="/assets/s3_fml7J.jpg_large"
           className="max-w-md rounded-lg shadow-2xl"
           alt="Box Office"
         />
@@ -18,7 +18,7 @@ const Information = () => {
             AIDOGE has a 8% burning tax, so adjusting your slippage tolerance to around 20% is suggested when buying/selling to ensure your successful transactions. Every time you buy AIDOGE, you will receive a Lucky Drop ticket with a chance to win an ARB prize based on the purchase amount. You can also stake your AIDOGE to earn more.
           </p>  
           <div className="flex justify-around">
-            <button className="btn btn-primary">Buy Airdoge</button>
+            <button className="btn btn-accent">Buy $Bark</button>
             <button className="btn btn-secondary-content text-primary">View Docs</button>
           </div>
         </div>
