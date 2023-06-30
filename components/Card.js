@@ -9,9 +9,8 @@ const CardComponent = () => {
             <h2 className="card-title text-[40px] font-bold text-primary flex justify-center">
               Airdrop soon!
             </h2>
-            <p className="text-gray-500">A total of 210,000,000,000,000,000 AIDOGE tokens are now available to be claimed by those who have claimed the ARB airdrop.
-                AIDOGE tokens that have not been claimed within 31 days will be used for the Community Long-Term Incentive Reward Program. The AIDOGE will be distributed to the top contributors of Arbitrum community and burned.</p>
-            <div className="alert alert-warning flex items-center my-4 p-1">
+            <p className="text-gray-500">A total of 1, 000,000,000 $BARK will be available for claim. $BARK tokens that WILL NOT BE CLAIMED within 31 days will be used for the Community Long-Term Incentive Reward Program.</p>
+            {/* <div className="alert alert-warning flex items-center my-4 p-1">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="stroke-current shrink-0 h-6 w-6"
@@ -26,22 +25,17 @@ const CardComponent = () => {
                 />
             </svg>
             <span className="ml-2">2023.04.15 09:00(UTC+0)-2023.05.15 09:00(UTC+0)</span>
-            </div>
+            </div> */}
 
-            {/* <progress className="progress progress-primary w-56" value={0} max="100"></progress>
-            <progress className="progress progress-primary w-56" value={10} max="100"></progress>
-            <progress className="progress progress-primary w-56" value={40} max="100"></progress>
-            <progress className="progress progress-primary w-56" value={70} max="100"></progress>
-            <progress className="progress progress-primary w-56" value={100} max="100"></progress> */}
-            <progress className="progress progress-accent w-full " value={70} max="100"></progress>
-            {/* <progress className="progress" value={70} max="100" style={{ backgroundColor: '#BF6F16' }}></progress> */}
-            <div className="flex justify-center">
+            
+            {/* <progress className="progress progress-accent w-full " value={70} max="100"></progress> */}
+            {/* <div className="flex justify-center">
               <input
                 type="text"
                 placeholder="0"
                 className="input input-bordered input-accent w-full max-w-l mt-4"
               />
-            </div>
+            </div> */}
             <div className="flex justify-center">
               <button className="btn btn-wide btn-outline btn-accent mt-4">claim</button>
             </div>

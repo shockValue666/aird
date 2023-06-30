@@ -56,7 +56,7 @@ export default function Home() {
           <Circle/>
           <Stats/>
           {/* <Values/> */}
-          <Teacher/>
+          {/* <Teacher/> */}
           {/* <Student/> */}
           <MoreInfoModal/>
           {/* <Cta/> */}
